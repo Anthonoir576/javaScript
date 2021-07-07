@@ -231,16 +231,59 @@ let pierre = {
 
 // ##############################  08 ##########################################
 // fonction demande a l'utilisateur un chiffre random entre 0-10, si bon 'bravo' si au dessus 'plus haut' si en dessous 'plus bas' avec que trois chances 
+// cette fonction utilise la boucle while, mais vous pouvez la faire avec une boucle FOR par exemple. En algo vous avez plusieurs methode possible de résoudre des problèmes
 
-let aleatoire = function () {
+function devineLeNombre() {
 
-    return Math.round(Math.random() * 10);
+    let aleatoireChiffre = Math.round(Math.random() * 10);
+    let alerteWindows = window.prompt("Entrer un chiffre entre 0 - 10");
+    // Supprimé cette variable chance, et dans le code, pour enlever ou rajouté un nombre de chance
+    let chance = 3; 
+
+    // Le chiffre entrer par l'utilisateur et convertis grace a prompt, mais en chaine de caractère, pour la comparé on utilise la fonction parseInt pour la convertir en chiffre 
+    alerteWindows = parseInt(alerteWindows, 10);
+
+    // boucle TANT QUE 
+    while (alerteWindows != aleatoireChiffre && chance > 0) {
+
+        chance--
+    
+        if (alerteWindows > aleatoireChiffre) {
+
+            alert(' Le chiffre doit être plus petit !');
+           
+
+        } else {
+
+            alert( 'Le chiffre doit être plus grand !');
+           
+
+        }
+        
+        if (chance > 0) {
+
+            alerteWindows = window.prompt('Retentez votre change :( ?');
+
+        }
+        
+    }
+
+    if (alerteWindows == aleatoireChiffre) {
+
+        return alert('bravo');
+
+    } else {
+
+        alert("ECHEC L'AMI ...")
+
+    }
 
 }
 
-function hallo () {
+console.log(devineLeNombre())
 
-    let spam = window.prompt('0 - 10')
-    console.log(spam)
 
-}
+// ******************************************************
+
+// ##############################  09 ##########################################
+
