@@ -321,3 +321,74 @@ function timingInterval2() {
 
 console.log(timingInterval2());
 
+
+// ******************************************************
+
+// ##############################  10 ##########################################
+// Fonction compteur par interval 1,2,3 etc toute les secondes
+
+function numberInter() {
+
+    let i = 0;
+
+    return window.setInterval(function() {
+
+        i++
+        console.log( 'Le numéros et ' + i)
+
+    }, 1000)
+
+};
+
+console.log(numberInter())
+
+
+// ******************************************************
+
+// ##############################  11 ##########################################
+// Fonction timing, execute l'action qu'une seule fois, au moment choisi 
+// affiche la commande, fenetre, ou alert qu'au moment voulu et prédéfini par vous meme, en l'occurence ici 5 secondes, prédéfini en 5000ms
+
+function POP() {
+
+    return window.setTimeout(function() {
+
+        alert('Je m\'affiche qu\'au bout de 5 secondes :) ')
+
+    }, 5000)
+
+};
+
+console.log(POP());
+
+
+// ******************************************************
+
+// ##############################  12 ##########################################
+// Fonction timing, execute l'action un nombre de fois defini, et avec un interval defini
+
+function POP2() {
+
+    let i = 0;
+    let id = window.setInterval(function() {
+
+        i++;
+        console.log( i + ' Je m\'affiche qu\'au bout de 1 seconde 10 fois :) ');
+        if (i === 10) {
+
+            // Permet d'arreter l'interval lorsque i et egale a 10, a chaque affichage i et incrémenté avec i++ soit equivalent a i = i + 1 et l'arrete avec la condition if fixé a 10, si je met 119393 sa serrai 119393 fois executé
+            return window.clearInterval(id)
+
+        }
+
+    }, 1000);
+
+    return id;
+
+};
+
+console.log(POP2());
+
+
+// ******************************************************
+

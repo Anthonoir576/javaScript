@@ -53,3 +53,22 @@ ________________________________________________________________________________
 
 // ##############################  09 ##########################################
 // Fonction qui execute une fonction dans un interval voulu type timer
+
+
+
+// ##############################  10 ##########################################
+// Fonction compteur par interval 1,2,3 etc toute les secondes
+
+
+
+// ##############################  11 ##########################################
+// Fonction timing, execute l'action qu'une seule fois, au moment choisi 
+// affiche la commande, fenetre, ou alert qu'au moment voulu et prédéfini par vous meme, en l'occurence ici 5 secondes, prédéfini en 5000ms
+
+
+
+// ##############################  12 ##########################################
+// Fonction timing, execute l'action un nombre de fois defini, et avec un interval defini
+
+
+
