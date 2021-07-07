@@ -8,6 +8,10 @@ Elles servent uniquement de base, ou d'aide mémoire concernant la structure glo
 
 Ce sont different exercice que j'ai réalisé pour m'entrainé via plusieurs plateforme différente.
 
+PAR CONTRE ! A savoir, que si vous avez besoin d'un des codes si dessous, ne lancez pas le code entier ! Car certaine variable sont doublés, 
+ainsi que certain code, tourne en boucle, ca risque de faire planté votre navigateur. 
+Si vous en avez besoin, copier coller, le code, et mettez le dans votre fichier. Renommé même les variables comme bon vous semble.
+
 
 _________________________________________________________________________________________________________________________________________________
 
