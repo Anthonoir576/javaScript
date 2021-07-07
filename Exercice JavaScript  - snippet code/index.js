@@ -498,4 +498,55 @@ change.innerText = '<h1><strong>SALUT</strong></h1> LES GUYS'
 
 // ****************************************************** 
 
+// ##############################  16  ##########################################
+// recuperer un element / ou les enfants
+
+let ul = document.querySelector('#UL');
+
+ul.children // uniquement les enfants LI
+ul.childNodes // Liste LI + noeud list, espace, etc . voir la doc
+ul.childElementCount // compte le nombre denfant comme un .length
+ul.getElementsByTagName('li') // recupere tous les li
+ul.firstElementChild // premier li
+ul.lastElementChild // derniere li
+ul.querySelector('li:nth-child(3)') // recupere le troisieme li
+
+let ulProfond = ul.querySelector('li:nth-child(3)');
+ulProfond.previousElementSibling; // nous donnera lelement precedent
+ulProfond.previousElementSibling.previousElementSibling // DONNERA LELEMENT precedent du precedent XD 
+ulProfond.nextElementSibling // comme vous le devinez, lelement suivant
+ulProfond.parentElement // le parent 
+
+ulProfond.parentElement.children // Pour recuperer les li, a partir dun li LOL! vous recuperez le parent, puis a nouveau les enfants ! EZZZZZZZZZZZ
+
+
+// ****************************************************** 
+
+// ##############################  17  ##########################################
+// Manipuler un element
+
+let li = document.querySelector('li:nth-child(1)');
+
+// li.parentElement.removeChild(li) // Supprime un element
+li.parentElement.appendChild(li) // rajoute un li en fin de liste
+
+let li2 = li.cloneNode(true)
+li.parentElement.appendChild(li2); // copier un element
+
+// rajouter un element 
+let li3 = document.createElement('li')
+li3.textContent = "7"
+li.parentNode.appendChild(li3)
+
+// remplacer un element par un autre
+li.parentElement.replaceChild(li3, li)
+
+// prendre le derniere element et linserer avant
+let last = document.querySelector('ul').lastElementChild
+
+li2.parentElement.insertBefore(last, li2)
+
+
+// ****************************************************** 
+
 
