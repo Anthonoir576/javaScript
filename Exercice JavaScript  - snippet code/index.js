@@ -1,7 +1,8 @@
 // LES CHAPITRES :
 
 
-// Attention ! certaine valeur retourne undefined car je n'ai pas utilisé de return dans certaine fonction. Il s'agit de mes premiers exercice de JS 
+// Attention ! certaine valeur retourne undefined car je n'ai pas utilisé de return dans certaine fonction. Il s'agit de mes premiers exercice de JS
+// Elles servent uniquement de base, ou d'aide mémoire concernant la structure globale !
 
 // ##############################  01  ##########################################
 // Variable déclaré globalement 
@@ -49,7 +50,7 @@ console.log(nombrePrem(30))
 // **********************************************
 
 // ##############################  03  ##########################################
-// Fonction multiplier, et attribuer une valeur par defaut dans le cas ou un seul argument est declaré 
+// Fonction qui multiplie, et attribue une valeur par defaut dans le cas ou un seul argument est declaré 
 
 function multi(a, b) {
 
@@ -68,7 +69,7 @@ console.log(multi(14))
 // ********************************************* 
 
 // ##############################  04  ##########################################
-// Fonction qui parcours un tableau, et nous dit, qui a la moyenne, et qui ne la pas
+// Fonction qui parcours un tableau, et nous dit, qui a la moyenne, et qui ne l'as pas
 
 let Eleves = [{
 
@@ -125,7 +126,7 @@ console.log(moyenneMini())
 //  ********************************************
 
 // ##############################  05  ##########################################
-// Fonction compteur de mot dans une phrase, elle calcule le nombre de mot similaire, et nous liste une paire, clé valeur avec le mot en clé, et combien il y en a dans la phrase en valeur
+// Fonction compteur de mot dans une phrase, elle calcule le nombre de mot similaire, et nous liste une paire, clé valeur avec le mot en clé, et combien il y en a dans la phrase en tant que valeur
 
 function frequence(phrase) {
 
@@ -156,7 +157,7 @@ console.log(frequence("ddd df sd d"))
 // **********************************************
 
 // ##############################  06 ##########################################
- // Fonction qui va parcourir deux objets eleve ou + , et permet de savoir qui a les meilleurs note, en calculant la moyenne
+ // Fonction qui va parcourir deux objets eleve ou + , et permet de savoir qui a les meilleurs notes, en calculant la moyenne
 
 function must(eleve1, eleve2) {
 
@@ -192,7 +193,7 @@ console.log(must(eleve1, eleve2))
 /*********************************************** */
 
 // ##############################  07  ##########################################
-// un objet global et créer, differente facon de recupéré une fonction et l'attribué a d'autre objet, du genre, calcule de moyenne, afin de ne pas réecrire le code 200 fois, je n'ai pas mis la methode du constructor sur cette exercice, car elle n'était pas mentionné dessus. 
+// un objet global et créer, differente facon de recupéré une fonction et l'attribué a d'autre objet, du genre, calcule de moyenne, afin de ne pas réecrire le code 200 fois, je n'ai pas mis la methode du constructor sur cette exercice, car elle n'était pas mentionné dans l'exercice. 
 
 let eleve = {
 
@@ -230,8 +231,9 @@ let pierre = {
 // ******************************************************
 
 // ##############################  08 ##########################################
-// fonction demande a l'utilisateur un chiffre random entre 0-10, si bon 'bravo' si au dessus 'plus haut' si en dessous 'plus bas' avec que trois chances 
-// cette fonction utilise la boucle while, mais vous pouvez la faire avec une boucle FOR par exemple. En algo vous avez plusieurs methode possible de résoudre des problèmes
+// fonction demande à l'utilisateur un chiffre random entre 0-10, si bon 'bravo' si au dessus 'plus haut' si en dessous 'plus bas' avec que trois chances 
+// cette fonction utilise la boucle while, mais vous pouvez la faire avec une boucle FOR par exemple. En algo vous avez plusieurs methodes possible de résoudre des problèmes
+
 
 function devineLeNombre() {
 
@@ -251,12 +253,12 @@ function devineLeNombre() {
         if (alerteWindows > aleatoireChiffre) {
 
             alert(' Le chiffre doit être plus petit !');
-           
+        
 
         } else {
 
             alert( 'Le chiffre doit être plus grand !');
-           
+        
 
         }
         
@@ -280,10 +282,42 @@ function devineLeNombre() {
 
 }
 
+
 console.log(devineLeNombre())
+
 
 
 // ******************************************************
 
 // ##############################  09 ##########################################
+// Fonction qui execute une fonction dans un interval voulu type timer
+
+function timingInterval() {
+
+    let demo = function() {
+
+        console.log('coucou le monde')
+
+    }
+
+    // fonction de lobj window qui execute une autre fonction, toute les 1 secondes, elle prend en argument la fonction a executer, et la durée.
+    return window.setInterval(demo, 1000)
+
+}
+
+console.log(timingInterval());
+
+// On peu l'écrire de cette manière, en mettant directement la fonction dans le premiere argument !! Appelez aussi callback 
+function timingInterval2() {
+
+
+    return window.setInterval(function() {
+
+        console.log('coucou le monde')
+
+    }, 1000)
+
+}
+
+console.log(timingInterval2());
 

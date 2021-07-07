@@ -3,7 +3,9 @@ ________________________________________________________________________________
 
 Attention !
 
-certaine valeur retourne undefined car je n'ai pas utilisé de return. Il s'agit de mes premiers exercice de JS 
+Certaine valeur retourne undefined car je n'ai pas utilisé de return dans certaine fonction. Il s'agit de mes premiers exercice de JS
+Elles servent uniquement de base, ou d'aide mémoire concernant la structure globale !
+
 Ce sont different exercice que j'ai réalisé pour m'entrainé via plusieurs plateforme différente.
 
 
@@ -20,29 +22,34 @@ ________________________________________________________________________________
 
 
 // ##############################  03  ##########################################
-// Fonction multiplier, et attribuer une valeur par defaut dans le cas ou un seul argument est declaré 
+// Fonction qui multiplie, et attribue une valeur par defaut dans le cas ou un seul argument est declaré 
 
 
 
 // ##############################  04  ##########################################
-// Fonction qui parcours un tableau, et nous dit, qui a la moyenne, et qui ne la pas
+// Fonction qui parcours un tableau, et nous dit, qui a la moyenne, et qui ne l'as pas
 
 
 
 // ##############################  05  ##########################################
-// Fonction compteur de mot dans une phrase, elle calcule le nombre de mot similaire, et nous liste une paire, clé valeur avec le mot en clé, et combien il y en a dans la phrase en valeur
+// Fonction compteur de mot dans une phrase, elle calcule le nombre de mot similaire, et nous liste une paire, clé valeur avec le mot en clé, et combien il y en a dans la phrase en tant que valeur
 
 
 
 // ##############################  06 ##########################################
-// Fonction qui va parcourir deux objets eleve ou + , et permet de savoir qui a les meilleurs note, en calculant la moyenne
+// Fonction qui va parcourir deux objets eleve ou + , et permet de savoir qui a les meilleurs notes, en calculant la moyenne
 
 
 
 // ##############################  07  ##########################################
-// un objet global et créer, differente facon de recupéré une fonction et l'attribué a d'autre objet, du genre, calcule de moyenne, afin de ne pas réecrire le code 200 fois, je n'ai pas mis la methode du constructor sur cette exercice, car elle n'était pas mentionné dessus. 
+// un objet global et créer, differente facon de recupéré une fonction et l'attribué à d'autre objet, du genre, calcule de moyenne, afin de ne pas réecrire le code 200 fois, je n'ai pas mis la methode du constructor sur cette exercice, car elle n'était pas mentionné dans l'exercice. 
 
 
 
 // ##############################  08 ##########################################
-// fonction demande a l'utilisateur un chiffre random entre 0-10, si bon 'bravo' si au dessus 'plus haut' si en dessous 'plus bas' avec que trois chances ou plus, voir infini si vous voulez.
+// fonction demande à l'utilisateur un chiffre random entre 0-10, si bon 'bravo' si au dessus 'plus haut' si en dessous 'plus bas' avec que trois chances ou plus, voir infini si vous voulez.
+
+
+
+// ##############################  09 ##########################################
+// Fonction qui execute une fonction dans un interval voulu type timer
