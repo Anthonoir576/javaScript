@@ -20,4 +20,27 @@ change.classList.add("P--modifierJS")
 // Permet de savoir si la class exist dans mon elements en indiquant TRUE or FALSE. A quoi ca peut servir ? a mettre une condition, SIIII la class existe, ALORS faire tel ou tel action. enchainer sur dautre modification etc . 
 change.classList.contains('P--modifierJS')
 
+// Exemple d'utilisation d'ajout de class
+// Pour rendre le truc plus naturelle faut jouer avec les transitions css, mais ca c'est a vous de voir, vous avez la base, recupérer un element, et comment ca fonctionne
+window.setInterval(function() {
+
+    change.classList.toggle('P--modifierJS')
+
+}, 1000);
+
+
+// Tu peux modifier aussi les styles du css directement
+change.style.fontSize = "50px";
+change.style.fontSize = "19.5px";
+
+// Tu peux modifier le contenu HTML directement genre modifier le texte dun paragraphe
+
+// innerHtml prendra en compte la modification de balise, comme ci vous aviez mis des balises strong contrairement a innerText qui va prendre vos balises comme un texte simple.
+// Pour resumé innerHtml modifie meme des balises
+// Et innerText uniquement du texte                            ou textContent 
+change.innerHTML = '<h1><strong>SALUT</strong></h1> LES GUYS'
+change.innerText = '<h1><strong>SALUT</strong></h1> LES GUYS'
+
+
+
 // ****************************************************** 
