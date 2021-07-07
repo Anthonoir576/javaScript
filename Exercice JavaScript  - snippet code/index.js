@@ -389,6 +389,23 @@ function POP2() {
 
 console.log(POP2());
 
+// Attention, la fonction window.setInterval possede un id, identifiant, en utilisant la variable, cela vous permez de recupéré l'id, et de le stoppé avec le CLEAR. 
+
+// ******************************************************
+
+// ##############################  13 ##########################################
+// Comment ecrire une fonction qui s'appelle elle même. Très important de connaitre la syntaxe !
+
+
+let a = "Antho te dit ";
+
+
+(function () {
+    
+    console.log(a + ' coucou')
+
+})()
+
 
 // ******************************************************
 
