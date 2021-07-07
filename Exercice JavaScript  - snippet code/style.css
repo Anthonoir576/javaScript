@@ -29,3 +29,16 @@ body, html {
     background-color: rgba(0, 0, 59, 1);
 
 }
+
+#demonstration1 .P {
+
+    color: red;
+
+}
+
+/* Après recuperation de JS, changement en couleur bleu */
+#demonstration1 .P--modifierJS{
+
+    color: rgb(0, 162, 255);
+
+}
