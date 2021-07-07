@@ -156,7 +156,7 @@ console.log(frequence("ddd df sd d"))
 
 // **********************************************
 
-// ##############################  06 ##########################################
+// ##############################  06  ##########################################
  // Fonction qui va parcourir deux objets eleve ou + , et permet de savoir qui a les meilleurs notes, en calculant la moyenne
 
 function must(eleve1, eleve2) {
@@ -230,7 +230,7 @@ let pierre = {
 
 // ******************************************************
 
-// ##############################  08 ##########################################
+// ##############################  08  ##########################################
 // fonction demande à l'utilisateur un chiffre random entre 0-10, si bon 'bravo' si au dessus 'plus haut' si en dessous 'plus bas' avec que trois chances 
 // cette fonction utilise la boucle while, mais vous pouvez la faire avec une boucle FOR par exemple. En algo vous avez plusieurs methodes possible de résoudre des problèmes
 
@@ -289,7 +289,7 @@ console.log(devineLeNombre())
 
 // ******************************************************
 
-// ##############################  09 ##########################################
+// ##############################  09  ##########################################
 // Fonction qui execute une fonction dans un interval voulu type timer
 
 function timingInterval() {
@@ -324,7 +324,7 @@ console.log(timingInterval2());
 
 // ******************************************************
 
-// ##############################  10 ##########################################
+// ##############################  10  ##########################################
 // Fonction compteur par interval 1,2,3 etc toute les secondes
 
 function numberInter() {
@@ -345,7 +345,7 @@ console.log(numberInter())
 
 // ******************************************************
 
-// ##############################  11 ##########################################
+// ##############################  11  ##########################################
 // Fonction timing, execute l'action qu'une seule fois, au moment choisi 
 // affiche la commande, fenetre, ou alert qu'au moment voulu et prédéfini par vous meme, en l'occurence ici 5 secondes, prédéfini en 5000ms
 
@@ -364,7 +364,7 @@ console.log(POP());
 
 // ******************************************************
 
-// ##############################  12 ##########################################
+// ##############################  12  ##########################################
 // Fonction timing, execute l'action un nombre de fois defini, et avec un interval defini
 
 function POP2() {
@@ -393,7 +393,7 @@ console.log(POP2());
 
 // ******************************************************
 
-// ##############################  13 ##########################################
+// ##############################  13  ##########################################
 // Comment ecrire une fonction qui s'appelle elle même. Très important de connaitre la syntaxe !
 
 
@@ -408,4 +408,27 @@ let a = "Antho te dit ";
 
 
 // ******************************************************
+
+// ##############################  14  ##########################################
+// LE DOM  !  
+// Les differentes facon de recuperé des elements HTML, ou directement via le selecteur css, si grace a JS vous voulez modifié un element, genre modifier la couleur p, lorsque tu scrolls, ou faire apparaitre ou disparaitre des elements au scroll, il faut pouvoir les ' pointés ' ou les recupérés celon votre facon de voir les choses, grace cest differentes methode.
+
+// Pour plus d'info voir la doc qui est bien foutu sur ces valeurs, ca serra important pour la suite. Si vous savez pas ciblé un élément, vous pourrez rien faire en JS coté développement web.
+
+// recupérer un ID
+document.getElementById('demonstration1')
+
+// récupérer une class
+document.getElementsByClassName('P')
+
+// récuperer les balises, ou une si il y en a qu'une 
+document.getElementsByTagName('div')
+document.querySelectorAll('p')
+
+// récupérer un selecteur css
+document.querySelector('.P') 
+document.querySelector('#demonstration1')
+document.querySelector('#demonstration1 p') // recupère que la balise p a l'intérieur de demonstration1
+
+// ****************************************************** 
 

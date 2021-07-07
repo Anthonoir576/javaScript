@@ -1,5 +1,31 @@
+/* BACKGROUND AND COLOR TEXT */
 body {
 
 background-color: rgba(0, 0, 59, 0.904);
+color: white;
+overflow-x: hidden;
+
+}
+
+/* BOX SIZING, reset margin/padding */
+body, html {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* 4 DIV AVEC ID DIFFERENT */
+#demonstration1, #demonstration2, #demonstration3, #demonstration4 {
+
+    border: 2px solid white;
+    text-align: justify;
+
+    padding: 5px 25px 5px 25px;
+    margin-top: 2em;
+    font-size: 19.5px;
+
+    background-color: rgba(0, 0, 59, 1);
 
 }
