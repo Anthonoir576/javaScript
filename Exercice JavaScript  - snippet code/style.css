@@ -30,17 +30,17 @@ body, html {
 
 }
 
-#demonstration1 .P {
+.P {
 
     transition: 1s;
-    color: red;
+    color: rgb(0, 162, 255);
 
 }
 
 /* Après recuperation de JS, changement en couleur bleu */
-#demonstration1 .P--modifierJS{
+.P--modifierJS{
 
     transition: 1s;
-    color: rgb(0, 162, 255);
+    color: rgb(255, 187, 0);
 
 }
