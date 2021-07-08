@@ -691,3 +691,23 @@ test.addEventListener('click', function(e) {
 
 // ****************************************************** 
 
+// ##############################  21  ##########################################
+// Les évènements - Et le remove de levenement afin qu'il ne tourne pas continuellement 
+
+let p = document.querySelector('.test--propa');
+
+let onClick = function(e) {
+
+    this.classList.add('P--modifierJS');
+    e.preventDefault();
+    console.log(p);
+    // supprimer un listener avec la fonction removeEventListener a la fin de son execution afin quel ne s'execute pas a chaque clique !
+    this.removeEventListener('click', onClick);
+
+};
+
+p.addEventListener('click', onClick);
+
+
+
+// ****************************************************** 
