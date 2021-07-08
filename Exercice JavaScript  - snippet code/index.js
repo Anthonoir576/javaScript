@@ -655,3 +655,39 @@ for (let i = 0; i < linkS.length; i++) {
 
 
 // ****************************************************** 
+
+// ##############################  20  ##########################################
+// Les évènements - Et la propagation 
+
+let linkS = document.querySelectorAll('a.link--external');
+
+for (let i = 0; i < linkS.length; i++) {
+
+    let link = linkS[i];
+
+    link.addEventListener('click', function(event) {
+        // explication de .stopPropagation() fonction, en dessous :)
+        event.stopPropagation();
+        console.log(' j\'ai clicker sur le lien <a> balise', event);
+        let reponse = window.confirm('Voulez-vous cliqué ?');
+
+        if (reponse === false) {
+
+            event.preventDefault();
+
+        }
+    });
+
+}
+
+// si vous regardez bien dans la console, lorsque vous cliquez sur le liens, cest aussi comme ci vous cliquez sur le paragraphe, ca peu créez des resultats innatendu et pas terrible dans certaine situation. une fonction existe, qui s'appelle stopPropagation()
+let test = document.querySelector('.test--propa');
+
+test.addEventListener('click', function(e) {
+
+    console.log('j\'ai cliqué sur le paragraphe', e);
+
+});
+
+// ****************************************************** 
+
