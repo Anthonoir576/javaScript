@@ -44,3 +44,44 @@ body, html {
     color: rgb(255, 187, 0);
 
 }
+
+/* LINK BALISE div */
+.div {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* LINK BALISE <a> */
+.div--link {
+
+    align-self: center;
+
+    text-decoration: none;
+    color: white;
+
+    font-size: 3.5vw;
+
+    border: 2px solid white;
+
+    background-color: rgba(0, 0, 59, 1);
+
+    padding: 25px 35px 25px 35px;
+    margin-top: 1em;
+
+    max-width: 25vw;
+
+}
+
+/* LINK HOVER */
+.div--link:hover {
+
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.521);
+    transform: scale(1.01);
+    text-shadow: 15px 0px 15px rgba(255, 255, 255, 0.521);
+    color: rgb(255, 166, 0);
+
+}

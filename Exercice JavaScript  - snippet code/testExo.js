@@ -1,49 +1,29 @@
-// ##############################  18  ##########################################
-//  Les évènements 
+// ##############################  19  ##########################################
+// Les évènements 
 
-// Selectionne mon premier paragraphe 
-let first = document.querySelector("#demonstration1 p");
 
-first.addEventListener('click', function () {
+// créer un effet au survole, comme un hover, et l'enleve une fois que la souris n'est plus dessus.
+let pS = document.querySelectorAll('p');
 
-    // TOGGLE or ADD ? j'aurais pus mettre add au lieu de toggle, mais toggle permet au premier click de mettre la class et au second de l'enlever, la class add met la class, mais ne l'enleve pas au second click
-    first.classList.toggle('P--modifierJS')
+for (let i = 0; i < pS.length; i++) {
 
-});
+    let p = pS[i];
 
-// Selectionne tous mes P 
-let Paragraph = document.querySelectorAll('p');
+    p.addEventListener('mouseover', function() {
 
-for (let i = 0; i < Paragraph.length; i++) {
+        this.classList.add('P--modifierJS');
 
-    let paragraphS = Paragraph[i];
+    });
 
-    (function(value) {
+    p.addEventListener('mouseout', function() {
 
-        value.addEventListener('click', function() {
+        this.classList.remove('P--modifierJS');
 
-            value.classList.toggle('P--modifierJS');
-
-        });
-
-    })(paragraphS);
-
-};
-
-// on utilise this, a la place de la fonction qui s'appelle elle meme elle permet de recuperer en gros l'index du p au moment du click, cette objet window de base, facilite lecriture du code dans ce contexte la. Personne ne force sont utilisation, au debut, je conseil de leviter surtout si vous avez du mal, apprenez a ecrire d'une facon dont vous vous comprenez, puis peaufiné avec l'experience. 
-for (let i = 0; i < Paragraph.length; i++) {
-
-    let paragraphS = Paragraph[i];
-    let orange = function() {
-
-        this.classList.toggle('P--modifierJS');
-       
-    };
-
-    paragraphS.addEventListener('click', orange);
+    });
 
 };
 
 
+// demande de confirmation au click sur lien 
 
 // ****************************************************** 
