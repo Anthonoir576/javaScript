@@ -12,6 +12,7 @@ PAR CONTRE ! A savoir, que si vous avez besoin d'un des codes si dessous, ne lan
 ainsi que certain code, tourne en boucle, ca risque de faire planté votre navigateur. 
 Si vous en avez besoin, copier coller, le code, et mettez le dans votre fichier. Renommé même les variables comme bon vous semble.
 
+J'ai utilisé que du css pas de sass, je pensais pas faire un gros dossier .. :(
 
 _________________________________________________________________________________________________________________________________________________
 
@@ -107,6 +108,11 @@ ________________________________________________________________________________
 
 // ##############################  18  ##########################################
 //  Les évènements 
+
+
+
+// ##############################  19  ##########################################
+// Les évènements - Et les stoppés ! 
 
 
 
