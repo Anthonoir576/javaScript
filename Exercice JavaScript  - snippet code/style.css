@@ -156,3 +156,38 @@ label {
     margin: 0 0 0.5em 0;
 
 }
+
+#road {
+
+    margin-top: 1em;
+    width: 15vw;
+    
+
+}
+
+#form2 {
+
+    width: 65vw;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    position: relative;
+
+}
+
+#form2 p {
+
+    min-width: 200px;
+
+}
+
+
+
+input[type="checkbox"] {
+
+    margin: 0 10px 0 0;
+    width: 15px;
+
+  
+
+}
