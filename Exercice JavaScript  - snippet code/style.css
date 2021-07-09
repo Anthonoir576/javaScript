@@ -181,13 +181,18 @@ label {
 
 }
 
-
-
 input[type="checkbox"] {
 
     margin: 0 10px 0 0;
     width: 15px;
 
   
+
+}
+
+#form3 {
+
+    width: 65vw;
+    margin-top: 0.5em;
 
 }

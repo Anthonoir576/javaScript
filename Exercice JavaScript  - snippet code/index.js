@@ -1,8 +1,21 @@
 // LES CHAPITRES :
 
 
-// Attention ! certaine valeur retourne undefined car je n'ai pas utilisé de return dans certaine fonction. Il s'agit de mes premiers exercice de JS
-// Elles servent uniquement de base, ou d'aide mémoire concernant la structure globale !
+/* 
+Attention !
+
+Certaine valeur retourne undefined car je n'ai pas utilisé de return dans certaine fonction. Il s'agit de mes premiers exercice de JS
+Elles servent uniquement de base, ou d'aide mémoire concernant la structure globale !
+
+Ce sont different exercice que j'ai réalisé pour m'entrainé via plusieurs plateforme différente.
+
+PAR CONTRE ! A savoir, que si vous avez besoin d'un des codes si dessous, ne lancez pas le code entier ! Car certaine variable sont doublés, 
+ainsi que certain code, tourne en boucle, ca risque de faire planté votre navigateur. 
+Si vous en avez besoin, copier coller, le code, et mettez le dans votre fichier. Renommé même les variables comme bon vous semble.
+
+J'ai utilisé que du css pas de sass, je pensais pas faire un gros dossier .. :( 
+    
+*/
 
 // ##############################  01  ##########################################
 // Variable déclaré globalement 
@@ -708,6 +721,76 @@ let onClick = function(e) {
 
 p.addEventListener('click', onClick);
 
+
+
+// ****************************************************** 
+
+// ##############################  22  ##########################################
+// Les évènements 
+
+//recupere une lettre tappé 
+let input = document.querySelector('#input1');
+
+input.addEventListener('keyup', function(e) {
+
+    console.log(e.key)
+
+});
+
+
+// si le nombre de caractere nest pas egale a 5, renvoie une erreur
+let listen = document.querySelector("#form");
+
+listen.addEventListener("submit", function(e) {
+
+    let content = document.querySelector("#cp");
+
+    if(content.value.length != 5) {
+
+        alert("le code postal n'est pas bon ");
+        e.preventDefault();
+
+    }
+
+})
+
+
+// ****************************************************** 
+
+// ##############################  23  ##########################################
+// Les évènements 
+
+// verifier si une checkbox et cocher
+let form = document.querySelector('#form');
+
+form.addEventListener('submit', function(e) {
+
+    let check = document.querySelector("#mentions");
+
+    // possibilité decrire   if (!check.checked) veux dire different 
+    if (check.checked === false) {
+
+        alert('Les conditions doivent être accepté ...')
+        e.preventDefault()
+
+    }
+
+});
+
+
+// verifier l'age, avec un select et js
+form.addEventListener('submit', function(e) {
+
+    let age = document.querySelector("#age");
+
+    if (age.value != "18+") {
+
+        alert('Vous n\'avez pas l\'age recquis ... ')
+        e.preventDefault()
+
+    }
+
+});
 
 
 // ****************************************************** 
