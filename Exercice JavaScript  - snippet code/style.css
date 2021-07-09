@@ -5,6 +5,9 @@ background-color: rgba(0, 0, 59, 0.904);
 color: white;
 overflow-x: hidden;
 
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 100;
+
 }
 
 /* BOX SIZING, reset margin/padding */
@@ -122,5 +125,34 @@ body, html {
 .test--propa a:hover {
 
     background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+form {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    border: 2px solid white;
+    background-color: rgba(0, 0, 59, 1);
+    padding: 20px;
+
+    margin-bottom: 2em;
+
+}
+
+input {
+
+    margin-bottom: 1em;
+    width: 65vw;
+
+}
+
+label {
+
+    width: 65vw;
+    margin: 0 0 0.5em 0;
 
 }
