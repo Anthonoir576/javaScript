@@ -1,62 +1,110 @@
-// REQUET
-let get = (url, succes, error) => {
+// REQUET #########################################################
 
-    let xhr = new window.XMLHttpRequest()
+// let get = (url, succes, error) => {
 
-    xhr.onreadystatechange = () => {
+//     let xhr = new window.XMLHttpRequest()
 
-        if (xhr.readyState === 4) {
+//     xhr.onreadystatechange = () => {
 
-            if (xhr.status === 200) {
+//         if (xhr.readyState === 4) {
 
-                succes(xhr.responseText);
+//             if (xhr.status === 200) {
 
-            } else {
+//                 succes(xhr.responseText);
 
-                error(xhr)
+//             } else {
 
-            }
+//                 error(xhr)
+
+//             }
+
+//         };
+
+//     };
+
+//     xhr.open('GET', url, true);
+//     xhr.send();
+
+// };
+
+// let getPosts = (succes, error) => {
+
+//     get('https://jsonplaceholder.typicode.com/users', (reponse) => {
+
+//         let users = JSON.parse(reponse);
+
+//         get('https://jsonplaceholder.typicode.com/comments?userId=' + users[0].id, (reponse) =>{
+
+//             let posts = JSON.parse(reponse)
+//             succes(posts)
+
+//         }, (e) => {
+
+//             error('erreur AJAX', e);
+
+//         })
+
+//     }, (e) => {
+
+//         error(e);
+
+//     });
+
+// };
+
+// getPosts( (posts) => {
+
+//     console.log('first ', posts[0]);
+
+// }, (error) => {
+
+//     console.error(error)
+
+// })
+
+
+
+
+// PROMISE ##########################################################
+
+let get = (url) => {
+
+    return new Promise( (resolve, reject) => {
+
+        let xhr = new window.XMLHttpRequest()
+
+        xhr.onreadystatechange = () => {
+
+            if (xhr.readyState === 4) {
+
+                if (xhr.status === 200) {
+
+                    resolve(xhr.responseText);
+
+                } else {
+
+                    reject(xhr)
+
+                }
+
+            };
 
         };
 
-    };
+        xhr.open('GET', url, true);
+        xhr.send();
 
-    xhr.open('GET', url, true);
-    xhr.send();
-
-};
-
-let getPosts = (succes, error) => {
-    
-    get('https://jsonplaceholder.typicode.com/users', (reponse) => {
-
-        let users = JSON.parse(reponse);
-        
-        get('https://jsonplaceholder.typicode.com/comments?userId=' + users[0].id, (reponse) =>{
-
-            let posts = JSON.parse(reponse)
-            succes(posts)
-
-        }, (error) => {
-
-            error('erreur AJAX', error);
-
-        })
-        
-    }, (error) => {
-
-        error(error);
 
     });
 
 };
 
-getPosts( (posts) => {
+get('https://jsonplaceholder.typicode.com/users').then( (reponse) => {
 
-    console.log('first ', posts[0]);
+    console.log(reponse);
 
-}, (error) => {
+}).catch( (error) => {
 
-    console.error(error)
+    console.log(error);
 
-})
+});
