@@ -244,23 +244,3 @@ fetch('https://jsonplaceholder.typicode.com/users')
 // };
 
 // getUsers();
-
-const getUsers = async () => {
-
-    let response = await fetch('https://jsonplaceholder.typicode.com/users')
-    
-    if (Response.ok) {
-
-        let data = await Response.json();
-        console.log(data);
-
-    } else {
-
-        console.error('Retour du serveur : ', response.status);
-
-    }
-    
-
-};
-
-getUsers();
