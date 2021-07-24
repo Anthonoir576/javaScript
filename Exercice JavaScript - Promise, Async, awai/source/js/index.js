@@ -67,44 +67,78 @@
 
 // PROMISE ##########################################################
 
-let get = (url) => {
+// let get = (url) => {
 
-    return new Promise( (resolve, reject) => {
+//     return new Promise( (resolve, reject) => {
 
-        let xhr = new window.XMLHttpRequest()
+//         let xhr = new window.XMLHttpRequest()
 
-        xhr.onreadystatechange = () => {
+//         xhr.onreadystatechange = () => {
 
-            if (xhr.readyState === 4) {
+//             if (xhr.readyState === 4) {
 
-                if (xhr.status === 200) {
+//                 if (xhr.status === 200) {
 
-                    resolve(xhr.responseText);
+//                     resolve(xhr.responseText);
 
-                } else {
+//                 } else {
 
-                    reject(xhr)
+//                     reject(xhr)
 
-                }
+//                 }
 
-            };
+//             };
 
-        };
+//         };
 
-        xhr.open('GET', url, true);
-        xhr.send();
+//         xhr.open('GET', url, true);
+//         xhr.send();
 
 
-    });
+//     });
 
-};
+// };
 
-get('https://jsonplaceholder.typicode.com/users').then( (reponse) => {
+// get('https://jsonplaceholder.typicode.com/users').then( (reponse) => {
 
-    console.log(reponse);
+//     console.log(reponse);
 
-}).catch( (error) => {
+// }).catch( (error) => {
 
-    console.log(error);
+//     console.log(error);
 
-});
+// });
+
+
+
+// let catchError = (e) => {console.error('Erreur AJAX ', e);};
+
+
+
+// let getPosts = () => {
+
+//     return new Promise( (resolve, reject) => {
+
+//         get('https://jsonplaceholder.typicode.com/users').then( (reponse) => {
+
+//             let users = JSON.parse(reponse);
+
+//             get('https://jsonplaceholder.typicode.com/comments?userId=' + users[0].id).then((reponse) => {
+
+//                 let posts = JSON.parse(reponse)
+//                 resolve(posts)
+
+//             }).catch(catchError);
+
+
+//         }).catch(catchError);
+
+//     });
+
+// };
+
+// getPosts().then((posts) => {
+
+//     console.log(posts[0]);
+
+// })
