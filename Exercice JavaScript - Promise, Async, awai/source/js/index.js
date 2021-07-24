@@ -221,4 +221,46 @@
 
 // FETCH() ###################################################
 
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then((Response) => {
+        return Response.json()
+    }).then((data) => {
+        console.log(data);
+    })
 
+// OU
+
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then(Response =>  Response.json()).then(console.log())
+
+// =>
+
+// const getUsers = async () => {
+
+//     let data = await fetch('https://jsonplaceholder.typicode.com/users')
+//     .then(Response =>  Response.json())
+//     console.log(data)
+
+// };
+
+// getUsers();
+
+const getUsers = async () => {
+
+    let response = await fetch('https://jsonplaceholder.typicode.com/users')
+    
+    if (Response.ok) {
+
+        let data = await Response.json();
+        console.log(data);
+
+    } else {
+
+        console.error('Retour du serveur : ', response.status);
+
+    }
+    
+
+};
+
+getUsers();
